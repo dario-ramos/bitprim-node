@@ -22,6 +22,11 @@ option(WITH_REMOTE_BLOCKCHAIN "Compile with remote bitprim-blockchain (aka. bitp
 #------------------------------------------------------------------------------
 option(WITH_REMOTE_DATABASE "Compile with remote bitprim-database (aka. bitprim-database-requester)." ON)
 
+# EXTENSION BLOCK NETWORK
+option(WITH_EXTBLK "Compile with Extension blocks support." OFF)
+if (WITH_EXTBLK)
+  add_definitions(-DWITH_EXTBLK)
+endif()
 
 # Implement --with-tests and declare WITH_TESTS.
 #------------------------------------------------------------------------------
