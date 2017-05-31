@@ -42,23 +42,24 @@ configuration::configuration(config::settings context)
 {
 }
 
-// Copy constructor.
-configuration::configuration(const configuration& other)
-  : help(other.help),
-
-#if !defined(WITH_REMOTE_BLOCKCHAIN) && !defined(WITH_REMOTE_DATABASE)
-    initchain(other.initchain),
-#endif // !defined(WITH_REMOTE_BLOCKCHAIN) && !defined(WITH_REMOTE_DATABASE)
-
-    settings(other.settings),
-    version(other.version),
-    file(other.file),
-    node(other.node),
-    chain(other.chain),
-    database(other.database),
-    network(other.network)
-{
-}
+//OLD MERGE MAY 2017 TODO:this code no longer exits...
+//// Copy constructor.
+//configuration::configuration(const configuration& other)
+//  : help(other.help),
+//
+//#if !defined(WITH_REMOTE_BLOCKCHAIN) && !defined(WITH_REMOTE_DATABASE)
+//    initchain(other.initchain),
+//#endif // !defined(WITH_REMOTE_BLOCKCHAIN) && !defined(WITH_REMOTE_DATABASE)
+//
+//    settings(other.settings),
+//    version(other.version),
+//    file(other.file),
+//    node(other.node),
+//    chain(other.chain),
+//    database(other.database),
+//    network(other.network)
+//{
+//}
 
 } // namespace node
 } // namespace libbitcoin
