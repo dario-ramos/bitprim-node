@@ -27,6 +27,7 @@ Version: @PACKAGE_VERSION@
 #------------------------------------------------------------------------------
 Requires: libbitcoin-blockchain >= 3.0.0 libbitcoin-network >= 3.0.0
 
+
 # Include directory and any other required compiler flags.
 #------------------------------------------------------------------------------
 Cflags: -I${includedir}
