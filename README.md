@@ -22,6 +22,21 @@ Table of Contents
 
 ### Using Conan (recommended)
 
+Conan is a Python package for dependency management; it only requires Python and Pip.
+With Conan, install can be performed on any OS. If there are no prebuilt binaries for a given
+OS-compiler-arch combination, Conan will build from source.
+
+```
+pip install conan
+conan remote add bitprim https://api.bintray.com/conan/bitprim/bitprim
+conan install bitprim-node/0.1@bitprim/stable
+```
+
+The last step will install binaries and headers in Conan's cache, a directory outside the usual
+system paths. This will avoid conflict with system packages such as boost.
+Also, notice it references the stable version 0.1. To see which versions are available,
+please check [Bintray](https://bintray.com/bitprim/bitprim/bitprim-node%3Abitprim).
+
 ### Build from sources
 
 #### Debian/ubuntu
